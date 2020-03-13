@@ -1,0 +1,23 @@
+---
+fake_backend_source_repo: "git@github.com:samiamr/fake-backend.git"
+fake_backend_source_branch: "master"
+fake_backend_image_tag: "JenkinsCICDgitlab"
+
+home: "/home/centos"
+volume_database: "/srv/db-data"
+
+ip_addr_preprod: "3.80.153.68"
+ip_addr_prod: "54.167.106.197"
+ip_addr_registry: "34.203.218.50"
+port_registry: "4001"
+port_app: "8181"
+
+
+
+
+
+#secret data vaulted
+github_private_key: "{{ vault_github_private_key }}"
+docker_hub_login: "{{ vault_docker_hub_login }}"
+docker_hub_email: "{{ vault_docker_hub_email }}"
+docker_hub_password: "{{ vault_docker_hub_password }}"
