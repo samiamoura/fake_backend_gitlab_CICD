@@ -89,7 +89,7 @@ deploy-student-list-preprod:
   <<: *ansible
   stage: preprod
   script:
-    - ansible-playbook  -i hosts --vault-password-file vault.key --private-key id_rsa --tags "preprod" --limit prod install_fake-backend.yml
+    - ansible-playbook  -i hosts --vault-password-file vault.key --private-key id_rsa --tags "preprod" --limit preprod install_fake-backend.yml
   only:
     - dev
 
