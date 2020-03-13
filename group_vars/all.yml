@@ -9,7 +9,7 @@ volume_database: "/srv/db-data"
 ip_addr_preprod: "3.80.153.68"
 ip_addr_prod: "54.167.106.197"
 ip_addr_registry: "34.203.218.50"
-port_registry: "4001"
+port_registry: "5000"
 port_app: "8181"
 
 
