@@ -1,11 +1,16 @@
 ---
-- name: Update conf file daemon.json
-  template:
-    src: daemon.json.j2
-    dest: /etc/docker/daemon.json
-    owner: centos
-    group: centos
+- block:
+  - name: Update conf file daemon.json
+    template:
+      src: daemon.json.j2
+      dest: /etc/docker/daemon.json
+      owner: centos
+      group: centos
 
-- name: Reload docker
-  command: systemctl reload docker
+  - name: Reload docker
+    command: systemctl reload docker
+  tags:
+    - build
+    - preprod
+    - prod
 
