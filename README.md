@@ -1,1 +1,1 @@
-# Chain Continuous Integratiion / Continious Deployment with Jenkinss
+# Chain Continuous Integraiion / Continious Deployment with Jenkinss
